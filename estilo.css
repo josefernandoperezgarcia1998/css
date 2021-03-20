@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.contenedor{
+    background-color: rgb(56, 55, 55);
+    width: 100vw;
+    height: 400px;
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+}
+
+
+.contenido{
+    background-color: honeydew;
+    width: 200px;
+    height: 200px;    
+    display: inline-block;
+    padding: 20px;
+    border: 20px;
+    margin: 20px;
+    position: relative;
+    top: 100px;
+}
+
+.elemento{
+    padding: 20px;
+    border: 20px;
+    margin: 20px;
+    position: relative;
+    top: 50px;
+}
+
+/* Tablet */
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 850px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    
+    .contenedor{
+        height: 400px;
+    }
+
+    .contenido{
+        width: 150px;
+        height: 150px;
+    }
+    .elemento{
+        padding: 20px;
+        border: 20px;
+        margin: 20px;
+        position: relative;
+        top: 25px;
+    }
+}
+
+/* Iphone */
+@media (max-width: 697px) {
+
+    .contenedor{
+        width: 100%;
+        height: 700px;
+    }
+
+    .contenido{
+        display: block;
+        margin: auto;
+        padding: 0;
+    }
+    .elemento{
+        padding: 20px;
+        border: 20px;
+        margin: 20px;
+        position: relative;
+        top: 70px;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .contenido{
+        width: 150px;
+        height: 150px;
+        position: relative;
+        top: 115px;
+    }
+    .elemento{
+        padding: 20px;
+        border: 20px;
+        margin: 20px;
+        position: relative;
+        top: 20px;
+    }
+}
