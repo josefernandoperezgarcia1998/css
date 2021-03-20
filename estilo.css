@@ -56,29 +56,7 @@ body{
     }
 }
 
-/* Iphone */
-@media (max-width: 697px) {
-
-    .contenedor{
-        width: 100%;
-        height: 700px;
-    }
-
-    .contenido{
-        display: block;
-        margin: auto;
-        padding: 0;
-    }
-    .elemento{
-        padding: 20px;
-        border: 20px;
-        margin: 20px;
-        position: relative;
-        top: 70px;
-    }
-
-}
-
+/* Tablet */
 @media (max-width: 850px) {
     .contenido{
         width: 150px;
@@ -93,4 +71,29 @@ body{
         position: relative;
         top: 20px;
     }
+}
+
+/* celulares */
+@media (max-width: 697px) {
+
+    .contenedor{
+        width: 100%;
+        height: 700px;
+    }
+
+    .contenido{
+        display: block;
+        margin: auto;
+        padding: 0;
+        width: 170px;
+        height: 170px;
+    }
+    .elemento{
+        padding: 20px;
+        border: 20px;
+        margin: 20px;
+        position: relative;
+        top: 50px;
+    }
+
 }
