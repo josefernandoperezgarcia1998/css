@@ -69,7 +69,7 @@ body{
         border: 20px;
         margin: 20px;
         position: relative;
-        top: 20px;
+        top: 25px;
     }
 }
 
@@ -97,3 +97,65 @@ body{
     }
 
 }
+
+/* Segunda sección */
+
+.contenedor2{
+    background-color: rgb(255, 239, 178);
+    width: 100vw;
+    height: 700px;
+    text-align: center;
+    display: inline-block;
+}
+
+.card{
+    height: 500px;
+    width: 800px;
+    background-color: white;
+    border-radius: 3%;
+    position: relative;
+    top: 100px;
+    padding: 0;
+    position: relative;
+    left: 300px;
+}
+
+.imagen-card{
+    width: 250px;
+    height: 500px;
+    background-color: rgb(255, 108, 98);
+    text-align: center;
+}
+
+.container-level{
+    height: 50px;
+    width: 120px;
+    opacity: 1;
+    background-color: rgb(245, 93, 78);
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 5px;
+}
+
+.level-name{
+    text-transform: uppercase;
+    position: relative;
+    bottom: 2px;
+}
+
+.img-card{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    position: relative;
+    top: 100px;
+    right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
+    border: 10px;
+}
+
