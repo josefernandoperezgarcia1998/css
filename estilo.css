@@ -205,6 +205,7 @@ body{
     .contenedor2{
         margin:0;
         padding: 0;
+        height: 800px;
     }
 
     .contenido-card{
