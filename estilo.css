@@ -105,7 +105,12 @@ body{
     width: 100vw;
     height: 700px;
     text-align: center;
+}
+
+.contenido-card{
     display: inline-block;
+    position: relative;
+    right: 200px;
 }
 
 .card{
@@ -115,9 +120,8 @@ body{
     border-radius: 3%;
     position: relative;
     top: 100px;
+    left: 200px;
     padding: 0;
-    position: relative;
-    left: 300px;
     border-radius: 25px;
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
@@ -194,4 +198,91 @@ body{
 .info{
     padding-top: 40px;
     text-align: right;
+}
+
+/* Tablet seccion 2 */
+@media (max-width: 850px) {
+    .contenedor2{
+        margin:0;
+        padding: 0;
+    }
+
+    .contenido-card{
+        display: inline-block;
+        position: relative;
+        right: 200px;
+        top: 50px;
+    }
+
+    .card{
+       height: 400px;
+       width: 700px;
+
+    }
+
+    .imagen-card{
+        height: 400px;
+    }
+    
+    .container-level{
+        height: 30px;
+        width: 100px;
+        position: relative;
+        left: 10px;
+        bottom: 20px;
+        top: 70px;
+    }
+    
+    .level-name{
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        position: relative;
+        top: -8px;
+
+    }
+    
+    .img-card{
+        height: 150px;
+        width: 150px;
+        position: relative;
+        top: 70px;
+        left: 10px;
+    }
+    
+    .texto-card{
+        height: 400px;
+        width: 450px;
+        position: relative;
+        bottom: 440px;
+
+    }
+    
+    .texto{
+      width: 350px;
+      position: relative;
+      top: 40px;        
+    }
+    
+    .titulo{
+        position: relative;
+        top: 50px;
+        font: 35px Arial, sans-serif;
+    }
+    
+    .description{
+        position: relative;
+        top: 60px;
+        font: 15px Arial, sans-serif;
+        line-height: 30px;
+    }
+
+    .info{
+        position: relative;
+        top: 60px;
+        font: 15px Arial, sans-serif;
+    }
+
+
+
 }
