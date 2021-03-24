@@ -253,10 +253,9 @@ body{
     
     .texto-card{
         height: 400px;
-        width: 450px;
+        width: 425px;
         position: relative;
-        bottom: 440px;
-
+        bottom: 435px;
     }
     
     .texto{
@@ -283,7 +282,93 @@ body{
         top: 60px;
         font: 15px Arial, sans-serif;
     }
+}
 
+/* celulares sección 2*/
+@media (max-width: 697px) {
 
+    .contenedor2{
+        margin:0;
+        padding: 0;
+        height: 1000px;
+    }
+
+    .contenido-card{
+        
+    }
+
+    .card{
+       height: 700px; 
+       width: 320px;
+
+    }
+
+    .imagen-card{
+        transform: rotate(90deg);
+        height: 320px;
+        width: 300px;
+        border-radius: 25px 0px 0px 25px;
+        position: relative;
+        top: -15px;
+        right: -10px;
+    }
+    
+    .container-level{
+        transform: rotate(90deg);
+        position: relative;
+        top: -7px;
+        left: -20px;
+    }
+
+    .lvlcont{
+        position: relative;
+        top: -40px;
+        left: 100px
+    }
+    
+    .level-name{
+        transform: rotate(180deg);
+    }
+    
+    .img-card{
+        transform: rotate(-90deg);
+        position: relative;
+        left: -50px;
+        width: 120px;
+        height: 120px
+    }
+    
+    .texto-card{
+        height: 405px;
+        width: 320px;
+        display: inline-block;
+        position: relative;
+        top: -25px;
+        left: -0px;
+        border-radius: 0px 0px 25px 25px;
+    }
+    
+    .texto{
+           
+    }
+    
+    .titulo{
+        position: relative;
+        top: -5px;
+        left: -15px;
+    }
+    
+    .description{
+        position: relative;
+        top: -5px;
+        left: 28px;
+        width: 266px;
+    }
+
+    .info{
+        position: relative;
+        top: 0px;
+        left: -57px;
+    }
 
 }
