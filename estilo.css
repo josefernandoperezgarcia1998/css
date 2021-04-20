@@ -1,12 +1,14 @@
 html{
-    scroll-behavior: smooth;
+    /* Para tener un movimiento lento */
+    scroll-behavior: smooth; 
 }
 body{
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: cadetblue;
 }
+
+/* Inicia el menu de navegación */
 
 nav{
     height: 50px;
@@ -27,7 +29,80 @@ ul a{
     position: relative;
     top: 9px;
 }
+/* Termina el menu de navegación */
 
+
+
+/* Inicia el botón de subir */
+.contenedorBoton{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: -1;
+    background: darkgoldenrod;
+    border-radius: 50%;
+}
+
+.boton{
+    height: 0rem;
+    width: 0rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+.boton i{
+    position: absolute;
+    font-size: 1rem;
+    height: 2rem;
+    width: 2rem;
+    top: 48%;
+    left: 60%;
+    transform: translate(50%,50%) scale(0);
+    transition: .2s;
+}
+
+.mostrar{
+    z-index: 10;
+}
+
+.mostrar .boton{
+    animation: ver .3s ease-in-out;
+    width: 0.6rem;
+    height: 0.6rem;
+    z-index: 11;
+}
+
+.mostrar i{
+    transform: translate(50%,50%) scale(1);
+}
+
+@keyframes ver{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 8rem;
+        height: 8rem;;
+    }
+    100%{
+        width: 0.6rem;
+        height: 0.6rem;
+
+    }
+}
+
+/* Termina el botón de subir */
+
+/* Inicia la primera sección */
 .contenedorTitulos{
     text-align: center;
 }
@@ -90,6 +165,8 @@ ul a{
     }
 
 }
+
+/* Termina la primera sección */
 
 /* Segunda sección */
 
