@@ -3,66 +3,33 @@ body{
     padding: 0;
     border: 0;
 }
-.contenedor{
-    background-color: rgb(56, 55, 55);
-    width: 100vw;
-    height: 400px;
+
+.contenedorTitulos{
     text-align: center;
-    position: relative;
-    bottom: 80px;
 }
 
+.contenedor{
+    background-color: rgb(194, 202, 202);
+    text-align: center;
+}
 
 .contenido{
-    background-color: honeydew;
+    height: 200px;
     width: 200px;
-    height: 200px;    
+    background-color: rgb(145, 102, 201);
     display: inline-block;
-    padding: 20px;
-    border: 20px;
     margin: 20px;
-    position: relative;
-    top: 100px;
 }
 
 .elemento{
-    padding: 20px;
-    border: 20px;
-    margin: 20px;
-    position: relative;
-    top: 50px;
+    padding-top: 60px;
 }
 
-/* Tablet */
-@media only screen 
-  and (min-device-width: 600px) 
-  and (max-device-width: 850px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    
-    .contenedor{
-        height: 400px;
-    }
-
-    .contenido{
-        width: 150px;
-        height: 150px;
-    }
-    .elemento{
-        padding: 20px;
-        border: 20px;
-        margin: 20px;
-        position: relative;
-        top: 25px;
-    }
-}
-
-/* Tablet */
+/* Tablet primera sección  */
 @media (max-width: 850px) {
     .contenido{
         width: 150px;
         height: 150px;
-        position: relative;
-        top: 115px;
     }
     .elemento{
         padding: 20px;
@@ -73,7 +40,7 @@ body{
     }
 }
 
-/* celulares */
+/* celulares primera sección */
 @media (max-width: 697px) {
 
     .contenedor{
@@ -87,6 +54,8 @@ body{
         padding: 0;
         width: 170px;
         height: 170px;
+        position: relative;
+        top: 70px;
     }
     .elemento{
         padding: 20px;
@@ -199,6 +168,7 @@ body{
     padding-top: 40px;
     text-align: right;
 }
+
 
 /* Tablet seccion 2 */
 @media (max-width: 850px) {
@@ -347,11 +317,7 @@ body{
         left: -0px;
         border-radius: 0px 0px 25px 25px;
     }
-    
-    .texto{
-           
-    }
-    
+
     .titulo{
         position: relative;
         top: -5px;
@@ -371,4 +337,58 @@ body{
         left: -57px;
     }
 
+}
+
+
+/* Tercera sección */
+
+.contenedor3{
+    background-color: #777;
+    height: 750px;
+    width: 100vw;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contenedor3 div{
+    display: inline-block;
+}
+
+.cabeza{
+    height: 130px;
+    width: 150px;
+    background-color: blanchedalmond;
+    position: relative;
+    top: 4px;
+}
+
+.brazos{
+    height: 100px;
+    width: 100%;
+    background-color: red;
+}
+
+.abdomen{
+    height: 250px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    top: -5px;
+}
+
+.pantalon{
+    height: 250px;
+    width: 200px;
+    background-color: blue;
+    position: relative;
+    top: -9px;
+}
+
+.pantalon::before{
+    content: '';
+    position: absolute;
+    top: 100px;
+    height: 100px;
+    width: 5px;
+    background-color: black;
 }
